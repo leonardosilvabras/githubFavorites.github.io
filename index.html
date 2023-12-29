@@ -1,11 +1,75 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>GitHub Favorites</title>
-</head>
-<body>
-  
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./styles/globalStyles.css" />
+
+    <title>Github Favorites</title>
+  </head>
+  <body>
+    <div id="app">
+      <header>
+        <h1>Github Favorites</h1>
+        <div class="search">
+          <label class="sr-only" for="input-search">Usuário do Github</label>
+          <input
+            id="input-search"
+            type="text"
+            name=""
+            id=""
+            placeholder="Usuário do Github"
+          />
+          <button>&plus;</button>
+        </div>
+      </header>
+      <table>
+        <thead>
+          <tr>
+            <th>Usuário</th>
+            <th>Repositórios</th>
+            <th>Seguidores</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="user">
+              <img
+                src="https://github.com/leonardosilvabras.png"
+                alt="Imagem de Leonardo Silva"
+              />
+              <a href="https://github.com/leonardosilvabras" target="_blank">
+                <p>Leonardo Silva</p>
+                <span>leonardosilvabras</span>
+              </a>
+            </td>
+            <td class="repositories">76</td>
+            <td class="followers">9589</td>
+            <td>
+              <button class="remove">&times;</button>
+            </td>
+          </tr>
+          <tr>
+            <td class="user">
+              <img
+                src="https://github.com/diego3g.png"
+                alt="Imagem de Leonardo Silva"
+              />
+              <a href="https://github.com/diego3g" target="_blank">
+                <p>Diego Fernandes</p>
+                <span>diego3g</span>
+              </a>
+            </td>
+            <td class="repositories">48</td>
+            <td class="followers">22503</td>
+            <td>
+              <button class="remove">&times;</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
 </html>
